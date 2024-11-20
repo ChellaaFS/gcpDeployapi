@@ -16,10 +16,10 @@ PRIVATE_KEY = os.getenv("PRIVATE_KEY")
 CLIENT_EMAIL = os.getenv("CLIENT_EMAIL")
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_CERT = os.getenv("CLIENT_CERT")
-
+TYPE = os.getenv("TYPE")
 
 credentials_json = {
-  "type": "service_account",
+  "type": TYPE,
   "project_id": "firstsource-vertex",
   "private_key_id": PRIVATE_KEY_ID,
   "private_key": PRIVATE_KEY,
